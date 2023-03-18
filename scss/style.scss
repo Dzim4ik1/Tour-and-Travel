@@ -1,3 +1,10 @@
+:root {
+	--main-color: #FB8F1D;
+
+	
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mulish:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,10 +13,13 @@
 
 body {
 	height: 100vh;
+	margin: 0 auto;
 }
 
 a {
 	text-decoration: none;
+	color: #B8BECD;
+
 }
 
 li {
@@ -17,5 +27,54 @@ li {
 }
 
 .container {
-	max-width: 1244px;
+	max-width: 1242px;
+	margin: 0 auto;
+}
+
+header {
+	margin-top: 45px;
+	font-family: 'Inter';
+	font-style: normal;
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+    justify-content: space-between;
+		.logo {
+
+		}
+		nav {
+			display: flex;
+			ul {
+				display: flex;
+				align-items: center;
+				li {
+					margin-right: 34px;
+					.active {
+						color: black;
+					}
+				}
+			}
+			.login,.register {
+				width: 132px;
+				height: 44px;
+				border: 1px solid var(--main-color);
+				border-radius: 8px;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 15px;
+				//color: var(--main-color);
+			}
+			.login {
+				color: var(--main-color);
+				margin-right: 34px;
+				background-color: inherit;
+			}
+			.register {
+				color: #fff;
+				background: var(--main-color);
+			}
+		}
+	}
 }

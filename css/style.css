@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mulish:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap");
+:root {
+  --main-color: #FB8F1D;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +11,12 @@
 
 body {
   height: 100vh;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
+  color: #B8BECD;
 }
 
 li {
@@ -17,5 +24,50 @@ li {
 }
 
 .container {
-  max-width: 1244px;
+  max-width: 1242px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 45px;
+  font-family: "Inter";
+  font-style: normal;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container nav {
+  display: flex;
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+}
+header .container nav ul li {
+  margin-right: 34px;
+}
+header .container nav ul li .active {
+  color: black;
+}
+header .container nav .login, header .container nav .register {
+  width: 132px;
+  height: 44px;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+header .container nav .login {
+  color: var(--main-color);
+  margin-right: 34px;
+  background-color: inherit;
+}
+header .container nav .register {
+  color: #fff;
+  background: var(--main-color);
 }
