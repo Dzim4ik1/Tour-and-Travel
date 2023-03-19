@@ -1,0 +1,1 @@
+макет https://www.figma.com/file/eOWwwvjcB8hFIOC3yx2Hwc/tour-and-travel-website-for-figma?node-id=1-4&t=z1KHPQSNkSektCyg-0
