@@ -78,6 +78,7 @@ main .container .hero {
   display: flex;
   flex-direction: row;
   position: relative;
+  margin-bottom: 143px;
 }
 main .container .hero-text {
   width: 50%;
@@ -113,6 +114,8 @@ main .container .hero-text .item-list {
 }
 main .container .hero-text .item-list li {
   position: relative;
+}
+main .container .hero-text .item-list li select {
   width: 220px;
   height: 52px;
   border: 0.8px solid #AFB0B9;
@@ -120,24 +123,22 @@ main .container .hero-text .item-list li {
   padding-left: 32px;
   margin-right: 30px;
   margin-bottom: 35px;
-}
-main .container .hero-text .item-list li a {
-  color: #4A4C53;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 3;
+  background-color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 main .container .hero-text .item-list li img {
   position: absolute;
-  top: 45%;
-  right: 20px;
+  top: 29%;
+  right: 55px;
+  pointer-events: none;
+  cursor: pointer;
 }
 main .container .hero-text .explore {
   width: 180px;
   height: 52px;
-  background: #FB8F1D;
+  background: var(--main-color);
   border-radius: 8px;
   font-family: "Mulish";
   font-style: normal;
@@ -163,4 +164,89 @@ main .container .hero .hero-bg3 {
   position: absolute;
   top: 0;
   left: 470px;
+}
+
+.travel {
+  display: flex;
+  position: relative;
+}
+.travel-img {
+  width: 50%;
+}
+.travel-text {
+  width: 50%;
+  padding: 0 80px 0 100px;
+}
+.travel-text h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+.travel-text p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: #7D7987;
+}
+.travel-text button {
+  background: var(--main-color);
+  border-radius: 8px;
+  width: 164px;
+  height: 48px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.travel .travel-bg1 {
+  position: absolute;
+  top: 210px;
+  right: 170px;
+}
+.travel .travel-bg2 {
+  position: absolute;
+  top: 0;
+  left: 625px;
+}
+
+.destinations-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.destinations-main ul {
+  display: flex;
+}
+.destinations-main ul li {
+  width: 25%;
+}
+
+footer {
+  height: 482px;
+  background: #F9F9FB;
+}
+footer .container .footer-nav {
+  display: flex;
+  border-bottom: 1px solid #C4C4C4;
+}
+footer .container .footer-nav-1 {
+  width: 40%;
+}
+footer .container .footer-nav-2 {
+  width: 20%;
+}
+footer .container .footer-nav-3 {
+  width: 20%;
+}
+footer .container .footer-nav-4 {
+  width: 20%;
+}
+footer .container .social-networks ul {
+  display: flex;
 }
