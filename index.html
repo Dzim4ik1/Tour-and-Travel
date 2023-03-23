@@ -1,18 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tour-and-Travel</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 	<link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 	<header>
 		<div class="container">
-		
+			<div class="logo">
+				<a href="#"><img src="./img/logo.png" alt="logo"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#destinations">Destinations</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Partner</a></li>
+				</ul>
+				<button class="login">Login</button>
+				<button class="register">Register</button>
+			</nav>
 		</div>
 	</header>
+	<main>
+		<div class="container">
+			<div class="hero">
+				<div class="hero-text">
+					<h1>Explore and<br>
+						Travel</h1>
+					<h3>Holiday finder</h3>
+					<div class="line"></div>
+
+					<ul class="item-list">
+						<li>
+							<select name="select">
+								<option value="value1" selected>Location</option>
+								<option value="value2">Ukraine</option>
+								<option value="value3">USA</option>
+								<option value="value3">Mexico</option>
+								<option value="value3">Poland</option>
+							</select>
+							<img src="./img/Vector.png">
+						</li>
+						<li>
+							<select name="select">
+								<option value="value1" selected>Activity</option>
+								<option value="value2">1</option>
+								<option value="value3">2</option>
+								<option value="value3">3</option>
+							</select>
+							<img src="./img/Vector.png">
+						</li>
+						<li>
+							<select name="select">
+								<option value="value1" selected>Grade</option>
+								<option value="value2">1</option>
+								<option value="value3">2</option>
+								<option value="value3">3</option>
+							</select>
+							<img src="./img/Vector.png">
+						</li>
+						<li>
+							<select name="select">
+								<option value="value1" selected>Date</option>
+								<option value="value2">today</option>
+								<option value="value3">yesterday</option>
+								<option value="value3">tomorrow</option>
+							</select>
+							<img src="./img/Vector.png">
+						</li>
+					</ul>
+
+					<button class="explore">Explore</button>
+				</div>
+				<div class="hero-img">
+					<img src="./img/thousand-01 1.png" alt="thousand">
+				</div>
+				<img src="./img/element.png" class="hero-bg1">
+				<img src="./img/element2.png" class="hero-bg2">
+				<img src="./img/element3.png" class="hero-bg3">
+			</div>
+			<div class="travel">
+				<div class="travel-img">
+					<img src="./img/Thousand-02 1.png" alt="Thousand-02">
+				</div>
+				<div class="travel-text">
+					<h2>A new way to explore the <br> world </h2>
+					<p>For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect
+						trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+					<button>Learn more</button>
+
+				</div>
+				<img src="./img/element2.png" class="travel-bg1">
+				<img src="./img/element3.png" class="travel-bg2">
+			</div>
+			<div class="destinations" id="destinations">
+				<div class="destinations-header">
+					<div class="destinations-header_text">
+						<h2>Featured destinations</h2>
+					</div>
+					<div class="destinations-header_link"><a href="#">View all <img src="./img/Vector 1.png"></a></div>
+				</div>
+				<div class="destinations-main">
+					<ul>
+						<li><img src="./img/Raja ampat.png" alt="Raja"></li>
+						<li><img src="./img/Fanjingshan.png" alt="Fanjingshan"></li>
+						<li><img src="./img/Vevey.png" alt="Vevey"></li>
+						<li><img src="./img/Skadar.png" alt="Skadar"></li>
+					</ul>
+				</div>
+				<img src="./img/element.png" class="destinations-bg1">
+				<img src="./img/element2.png" class="destinations-bg2">
+				<img src="./img/element3.png" class="destinations-bg3">
+			</div>
+			<div class="guides">
+
+				<div class="guides-text">
+					<h2>Guides by Thousand
+						<br> Sunny
+					</h2>
+					<p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the
+						ultimate resource before and during a trip.</p>
+					<button>Download</button>
+
+				</div>
+				<div class="guides-img">
+					<img src="./img/Thousand-03.png" alt="Thousand-03">
+				</div>
+
+			</div>
+			<div class="testimonials">
+				<h2>Testimonials</h2>
+				<div class="testimonials_wrapper">
+
+				<div class="testimonials-content">
+						<ul>
+							<li><img src="./img/star.png" ></li>
+							<li><img src="./img/star.png" ></li>
+							<li><img src="./img/star.png" ></li>
+							<li><img src="./img/star.png" ></li>
+							<li><img src="./img/star.png" ></li>
+						</ul>
+
+					<p>“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis
+						purus. Morbi blandit sit amet turpis nec”</p>
+					<p><strong>Edward Newgate</strong><br><span>Founder Circle</span></p>
+				</div>
+				<div class="testimonials-slider">
+					<!-- Slider main container -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide"><img src="./img/image 6.png"></div>
+							<div class="swiper-slide"><img src="./img/image 6.png"></div>
+							<div class="swiper-slide"><img src="./img/image 6.png"></div>
+
+						</div>
+
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev">
+
+						</div>
+						<div class="swiper-button-next"></div>
+
+
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<ul class="footer-nav">
+				<ul class="footer-nav-1">
+					<li><a href="#"><img src="./img/logo.png" alt="logo"></a></li>
+					<li>
+						<p>Plan and book your perfect trip with
+							expert advice, travel tips destination
+							information from us</p>
+					</li>
+					<li><span>©2020 Thousand Sunny. All rights reserved</span></li>
+				</ul>
+				<ul class="footer-nav-2">
+					<li><a href="#" class="nav-title">Destinations</a></li>
+					<li><a href="#">Africa</a></li>
+					<li><a href="#">Antarctica</a></li>
+					<li><a href="#">Asia</a></li>
+					<li><a href="#">Europe</a></li>
+					<li><a href="#">America</a></li>
+				</ul>
+				<ul class="footer-nav-3">
+					<li><a href="#" class="nav-title">Shop</a></li>
+					<li><a href="#">Destination Guides</a></li>
+					<li><a href="#">Pictorial & Gifts</a></li>
+					<li><a href="#"> Special Offers</a></li>
+					<li><a href="#"> Delivery Times</a></li>
+					<li><a href="#"> FAQs</a></li>
+				</ul>
+				<ul class="footer-nav-4">
+					<li><a href="#" class="nav-title">Interests</a></li>
+					<li><a href="#">Adventure Travel</a></li>
+					<li><a href="#">Art And Culture</a></li>
+					<li><a href="#"> Wildlife And Nature</a></li>
+					<li><a href="#"> Family Holidays</a></li>
+					<li><a href="#"> Food And Drink</a></li>
+				</ul>
+			</ul>
+			<div class="social-networks">
+				<ul>
+					<li><a href="#"><img src="./img/twit.png" alt="twitter"></a></li>
+					<li><a href="#"><img src="./img/face.png" alt="facebook"></a></li>
+					<li><a href="#"><img src="./img/inst.png" alt="instagram"></a></li>
+					<li><a href="#"><img src="./img/ln.png" alt="linkedin"></a></li>
+					<li><a href="#"><img src="./img/you.png" alt="youtube"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="./js/index.js"></script>
 </body>
+
 </html>
