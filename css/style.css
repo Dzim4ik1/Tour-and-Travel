@@ -326,6 +326,31 @@ main .container .hero .hero-bg3 {
   color: #FFFFFF;
 }
 
+.testimonials h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+.testimonials_wrapper {
+  display: flex;
+}
+.testimonials_wrapper .testimonials-content {
+  margin-top: 85px;
+}
+.testimonials_wrapper .testimonials-content ul {
+  display: flex;
+  flex-direction: row;
+}
+.testimonials_wrapper .testimonials-content p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
 footer {
   max-height: 482px;
   background: #F9F9FB;
@@ -385,4 +410,52 @@ footer .container .social-networks ul {
 }
 footer .container .social-networks ul li {
   margin-right: 35px;
+}
+
+.swiper {
+  width: 400px;
+  height: 600px;
+  position: relative;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  padding: 5px;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.swiper .swiper-button-prev {
+  position: absolute;
+  top: 482px;
+  left: 280px;
+}
+.swiper .swiper-button-next {
+  position: absolute;
+  top: 482px;
+  left: 340px;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  border: 1px solid black;
+  border-radius: 65%;
+  width: 50px;
+  height: 50px;
+  background: white;
+}
+.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+  font-size: 25px;
+  color: black;
+}
+.swiper::after {
+  content: "";
+  position: absolute;
+  width: 132px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 16px 0px 0px 0px;
+  bottom: 87px;
+  z-index: 9;
+  right: 0;
 }
